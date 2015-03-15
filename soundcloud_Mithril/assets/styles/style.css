@@ -1,0 +1,29 @@
+.search-list {
+	margin-top:15px;
+	min-height:220px;
+	width:100%;
+	overflow: auto;
+}
+ul li {
+	cursor: hand;
+	background-color: #f8f8f8;
+	margin-top:2px;
+}
+.link{cursor:pointer}
+.column {
+    background-color: #f2f2f2;
+	padding-right:5px;
+	border-color: #444; 
+	border-style: solid;
+    border-width: 1px; 
+}
+.play-imag{
+	margin-left:15%;
+}
+.page-header{
+	margin-left:50% auto;
+}
+.s-panel{
+	min-height:380px;
+
+	}
