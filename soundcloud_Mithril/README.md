@@ -5,6 +5,11 @@ Allows you to paginate the results, see recent searches etc.
 
 Implemented in mithril.js 
 
-run npm install,
-bower install, 
--sails lift
+## Installation &nbsp;
+
+**With [node](http://nodejs.org) [installed](http://sailsjs.org/#!documentation/new-to-nodejs) run:**
+```sh
+npm install
+bower install
+sails lift
+```
