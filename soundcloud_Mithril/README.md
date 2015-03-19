@@ -1,9 +1,10 @@
 # soundcloud_Mithril
 
 Allows you to search SoundCloud API for songs and artist
+
 Allows you to paginate the results, see recent searches etc.
 
-Implemented in mithril.js 
+Implemented with mithril.js 
 
 ## Installation &nbsp;
 
