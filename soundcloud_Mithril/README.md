@@ -10,9 +10,9 @@ Implemented with [mithril.js](http://lhorie.github.io/mithril/index.html) as a f
 
 **With [node](http://nodejs.org) [installed](http://sailsjs.org/#!documentation/new-to-nodejs) run:**
 ```sh
-npm install
-bower install
-sails lift
+* npm install
+* bower install
+* sails lift
 ```
 
 ## License
