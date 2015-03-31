@@ -10,6 +10,16 @@
 		recent_length: 5
 	}
 	
+	var animation = {
+		fadesIn : function(element, isInitialized, context) {
+		  if (!isInitialized) {
+			element.style.opacity = 0;
+			Velocity(element, {opacity: 1},{delay:400});
+		  }
+
+ },
+	}
+	
 	function init(){
 		SC.initialize({
 			client_id: config.client_id
@@ -100,7 +110,7 @@
 		       var image_url = this.item() ? this.item().artwork_url : ""
 		       return [
 			   m("h2", "Play"),
-			   m("div", [m("", [m("img.play-imag.link[height='250'][src='" + image_url + "'][width='250']",{onclick: ctrl.play})])])]
+			   m("div",[m("div",[m("img.play-imag.link[height='250'][src='" + image_url + "'][width='250']",{onclick: ctrl.play})])])]
 			   
 		
 		}
@@ -124,8 +134,16 @@
 				playModule.set(value);
 			}
 		},
+		load : function() {
+			return JSON.parse(localStorage["viewMode"] || "[]");
+		},
 		toggleView: function(mode){
 			this.viewMode(mode)
+			localStorage["viewMode"] = JSON.stringify(mode)	
+		},
+		controller; function(){
+		   var viewMode = searchModule.load();
+		   searchModule.viewMode(viewMode || "list");
 		},
 		search: function (getNext, ev){
 		    
